@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pushIntoNavigationStack</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//ViewControll Push :&lt;#Interface Name#&gt;
+&lt;#Interface Name#&gt; *&lt;#destinationViewController#&gt; = [&lt;#Interface Name#&gt; newInstance];
+[self.navigationController pushViewController:&lt;#destinationViewController#&gt; animated:YES];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0FA9422A-4D46-4760-AA45-41906E3CB942</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Navigation stack push new View controller</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Push a next View Controller in navigation stack</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

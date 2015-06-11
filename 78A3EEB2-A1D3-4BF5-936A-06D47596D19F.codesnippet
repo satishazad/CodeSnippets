@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>dispatch_GCD_BakcgroundToMainQueueTemplate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /*
+         * GCD Background Sync Operation
+         * After Background Sync Move to Main Queue
+        */
+       let bgQueue:dispatch_queue_t = SyncConfig.syncBackgroundQueueDefault()
+               
+        dispatch_async(bgQueue, { () -&gt; Void in
+            
+            //Tasks in background Queue
+            
+            
+            dispatch_async(dispatch_get_main_queue(), { () -&gt; Void in
+                //Tasks in Main Queue
+                
+            })
+        })
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>78A3EEB2-A1D3-4BF5-936A-06D47596D19F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Manage GCD for background and Main Queue</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>GCD background to Main Queue Operation task Template</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

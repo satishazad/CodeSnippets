@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>AppConfigFileRead</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+
+@interface AppConfig ()
+
+
++ (NSDictionary *)configFileInfo;
++ (id)configSettingForKey:(NSString *)key;
+
+@end
+
+
+
+
+@implementation AppConfig
+
+
+#pragma mark :- Core Methods to Read Config file
+/**
+ Read Config file and all its info
+ @param Config File name
+ @returns Dictionary of config file Data
+ @exception nil
+ */
+
++ (NSDictionary *)configFileInfo {
+    NSString *path = [[NSBundle mainBundle] pathForResource:NSStringFromClass([self class]) ofType:@"plist"];
+    return [NSDictionary dictionaryWithContentsOfFile:path];
+}
+
+
++ (id)configSettingForKey:(NSString *)key {
+    return [[self configFileInfo] objectForKey:key];
+}
+
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F7BBDCFE-AFDA-4C8E-AD87-2F47210A48E5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Stores the App Configuration data info in plist file and read if needed</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>App Configuration plist file</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

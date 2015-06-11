@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CoreDataFetchProperties</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var error: NSError? = nil
+        
+        //Set Up Entity Description
+        //Add If required
+        
+        
+        //Sort Descriptor
+        let sd = NSSortDescriptor(key: "&lt;#KeyName#&gt;", ascending: false)
+        let sortDescriptors = [sd]
+        
+        
+        //Predicate
+let predicate = NSPredicate(format: "&lt;#Key#&gt; == %@", &lt;#Value#&gt;)
+
+
+return &lt;#EntityName#&gt;.getWithPredicate(predicate, sortDescriptor: sd, error: &amp;error) as? &lt;#EntityName#&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3E1F0895-8FD3-4302-9034-AC19535DD095</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CoreData Properties add to fetch Info from CoreData</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Core Data fetch Properties to Set Predicate, SortDescriptor, etc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

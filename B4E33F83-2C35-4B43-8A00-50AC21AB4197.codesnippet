@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>SwiftFunction</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*
+ * @returns     : &lt;#ReturnType#&gt;
+ * @params      : &lt;#Params#&gt;
+ * @exception   : &lt;#ExceptionDetail#&gt;
+ * @Description : &lt;#Description-Line1#&gt;
+ *                &lt;#Description-Line1#&gt;
+ *                &lt;#Description-Line1#&gt;
+ */
+
+func &lt;#Function Name#&gt;(&lt;#params#&gt;) -&gt; &lt;#return type#&gt; {
+    //Your Function Definition:
+
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B4E33F83-2C35-4B43-8A00-50AC21AB4197</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Provide snippet to add Function informations</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Function Template - Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

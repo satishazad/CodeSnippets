@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CoreDataFRCWithParameters</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //MARK: - Create &lt;#EntityName#&gt; FetchController
+ func &lt;#EntityName#&gt;FetchedRequestControllerFor&lt;#InputParamsName#&gt;(&lt;#InputParams#&gt;) -&gt; NSFetchedResultsController? {
+    
+    var error: NSError? = nil
+    
+    //Entity Description
+    //let entityDescription = &lt;#EntityName#&gt;.entityDescriptionWithError(&amp;error)
+    
+    if(error != nil) {
+        return nil
+    }
+    
+    //Sort Descriptor
+    let sd = NSSortDescriptor(key: "&lt;#KeyName#&gt;", ascending: false)
+    let sortDescriptors = [sd]
+    
+    //Predicate
+    let predicate = NSPredicate(format: "&lt;#Format#&gt;", &lt;#Params#&gt;)
+    
+    return &lt;#EntityName#&gt;.fetchedResultsControllerWithPredicate(predicate, sortDescriptors: sortDescriptors, error: &amp;error)
+ }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DC3DF3FE-50EE-4ED0-943C-9B23B490305C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a FRC using entityDescription, Predicate, SortDescrptor and error handling</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create to request FetchedResultsController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

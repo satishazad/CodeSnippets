@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>createNewEntity</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>   /**
+   *  Create &lt;#Entity Name#&gt;
+   *  @params: &lt;#Params#&gt;
+   *
+   *  @return &lt;#EntityNameObject#&gt; Object.
+   */
+
+   class func build(&lt;#Input Parameters#&gt;) -&gt; &lt;#return-type#&gt; {
+        
+            var error: NSError? = nil
+            var managedObject: &lt;#EntityName#&gt; = newEntityWithError(&amp;error) as &lt;#EntityName#&gt;
+        
+            //Set your ManagedObjects Attributes Here
+            //.......
+    
+        
+            return managedObject
+    }
+    
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E2AA76F-42F4-44A5-AAF1-21C705A1A059</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a new ManagedObject for the Entity and set attributes manually</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create a New Entity for CoreData Object</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

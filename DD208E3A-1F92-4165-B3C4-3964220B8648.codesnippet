@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fileDetail</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> /**
+    * Class Name  :   &lt;#FileName#&gt;
+    * Project     :   &lt;#ProjectName#&gt;
+    * Created by  :   &lt;#FullName#&gt;
+    * Created on  :   &lt;#Date#&gt;
+    * COPYRIGHT(c):   &lt;#CopyRightDecription#&gt;
+    *
+    * Description :   &lt;#Description#&gt; 
+    */
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DD208E3A-1F92-4165-B3C4-3964220B8648</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Adds the details about the file on Top ie Header</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>FileHeaderDetails</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

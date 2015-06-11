@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CoreDataFRCDelegates</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    //MARK: - NSFetchedResultsController Delegate
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        
+    }
+    
+    
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+      
+           
+    }
+    
+    
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F3091067-ED63-479A-8B61-0A3C38FC6186</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add methods of NSFetchedResultsControllerDelegate</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CoreData NSFetchedResultsControllerDelegates Method</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

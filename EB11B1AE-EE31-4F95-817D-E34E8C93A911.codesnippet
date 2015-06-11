@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>LoggerDlog</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+/*
+ * Print Logger
+ * Print Log values
+ * Disable DEBUG if you dont want to log anything
+ */
+
+#if DEBUG
+    //This will runs only in Debug case
+    func DLog(message: AnyObject, file: String = __FUNCTION__, function: String = __FILE__, line: Int = __LINE__, column: Int = __COLUMN__) {
+    println("\(file) : \(function) : \(line) : \(column) - \(message)")
+    }
+    #else
+    func DLog(message: AnyObject, file: String = __FUNCTION__, function: String = __FILE__, line: Int = __LINE__, column: Int = __COLUMN__) {
+        //
+    }
+#endif
+
+
+//This will runs in all case
+func ALog(message: AnyObject, file: String = __FUNCTION__, function: String = __FILE__, line: Int = __LINE__, column: Int = __COLUMN__) {
+    println("\(file) : \(function) : \(line) : \(column) - \(message)")
+}
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EB11B1AE-EE31-4F95-817D-E34E8C93A911</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>printing logs on consol</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DLog Consol Print Logger </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

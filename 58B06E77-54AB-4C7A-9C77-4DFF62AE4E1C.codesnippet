@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Abstract Method</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/*
+     * Templates : Abstract method and must be implemented in Subclass
+     * Raised Exceptions when not implemented in Subclass
+     *
+     */
+    func &lt;#Function-Name#&gt;(&lt;#@params#&gt;) -&gt; &lt;#return type#&gt; {
+        println("Abstract method is not implemented in Subclass. \(__FUNCTION__)")
+
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>58B06E77-54AB-4C7A-9C77-4DFF62AE4E1C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for Abstract method ie template design</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Abstract Function prototype</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>frcOperationTypeSwitchCase</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> switch(type) {
+        case .Delete:
+            
+            break
+            
+        case .Insert:
+            
+            break
+            
+            
+        case .Update:
+            
+            break
+            
+        case .Move:
+            
+            break
+            
+        default:
+            break
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5527D516-7B18-44FD-801A-5B18143321D7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Defines the Operation performed Insert, Update, Delete, Move etc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSFetchedResultsController Delegate Switch Type Case</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

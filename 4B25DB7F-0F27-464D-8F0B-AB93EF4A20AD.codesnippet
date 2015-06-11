@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>function</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+/*
+ * Function     : &lt;#Function-Summary#&gt;
+ * @returns     : &lt;#ReturnType#&gt;
+ * @params      : &lt;#Params#&gt;
+ * @exception   : &lt;#ExceptionDetail#&gt;
+ * @Description : &lt;#Description-Line1#&gt;
+ *                &lt;#Description-Line1#&gt;
+ */
+
+- (&lt;#return-type#&gt;) &lt;#Function Name#&gt;  {
+    //Your Function Definition:
+
+
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4B25DB7F-0F27-464D-8F0B-AB93EF4A20AD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Define a function in objective c and add documentations</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Function Documentation and definition</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

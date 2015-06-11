@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>WebAPIBaseURL - Swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+/*
+ * Web APIs Local and Web URL configuration for Base URL.
+ * define macro 'ONLINE' ifdef for using online APIs ie from web server
+ * Un define macro 'ONLINE' ifndef for not using Web APIs. In this case it uses local API
+ */
+
+#if DEBUG
+    //used in online case
+    let kServerBaseURL = &lt;#BaseURL of Web API#&gt;
+    let kServer = &lt;#Server Web API address#&gt;
+
+#else
+    //used in local api case
+    let kServerBaseURL = &lt;#BaseURL of Local API or IP#&gt;
+    let kServer = &lt;#Local API ip address#&gt;
+
+#endif
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>96884B5F-0968-4EB3-A1C7-972DC7C25126</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Configure to use Online API base url or Local API base URl</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>API BaseURL Local and Server Configuration in Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>singelton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+#pragma mark :- Singelton Instance
+/*
+ * @returns     : Singelton Instance of Class: &lt;#Class-name#&gt;
+ * @params      : &lt;#params#&gt;
+ * @Description : Creates a singlton instance of &lt;#Class#&gt; class
+ *                if already exists return the instance else create new one.
+ */
+
++ (instancetype) sharedNotification  {
+    //Your Function Definition: Singelton Instance
+    static &lt;#Class-name#&gt; *instance_ = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        instance_ = [[&lt;#Class-name#&gt; alloc] init];
+    });
+
+    return instance_;
+}
+
+
+
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F6690E0-48B6-4BCA-8AF7-EA89992B3754</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates a Singelton instance of a class with class name</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Singelton instance </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

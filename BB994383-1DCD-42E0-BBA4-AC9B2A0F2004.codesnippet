@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tableMethods</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+
+#pragma mark - UITableView Data Source
+//Number of sections in a table
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#Number of Sections#&gt;;
+}
+
+
+//Number of rows in a Section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return &lt;#Number of rows#&gt;;
+}
+
+
+
+//Cell Created
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *Identifier = &lt;#Identifier Name#&gt;;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:&lt;#UITableViewCellStyle#&gt; reuseIdentifier:Identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    //Configure Cell ...
+    
+    [self configureCell:cell atIndexPath:indexPath];
+    
+    
+    return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    cell.textLabel.text = &lt;#Cell Text#&gt;;
+    
+}
+
+
+
+#pragma mark - UITableViewDelegates
+//Cell Selected
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //Cell Selected -- at IndexPath
+    
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BB994383-1DCD-42E0-BBA4-AC9B2A0F2004</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Define and Implement Table View Data Source and Delegate Methods</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>TableView Data Source and Delegate Methods</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

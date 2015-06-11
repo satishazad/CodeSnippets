@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>SingeltonMethod</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>       /*
+        * Creates a Singleton Instance
+        */
+        class var sharedInstance: &lt;#SingletonClass Name#&gt; {
+            struct Static {
+                static var instance: &lt;#SingeltonClass Name#&gt;?
+                static var token: dispatch_once_t = 0
+            }
+    
+            dispatch_once(&amp;Static.token) {
+                Static.instance = &lt;#SingeltonClass Name#&gt;()
+            }
+            
+            return Static.instance!
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3033C18A-1AD9-4855-BAD8-695FC319DB3C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>It creates a singleton instance in swift.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Singelton Instance in Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
