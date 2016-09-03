@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pragma</string>
+	<string>validationUIField</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ========= &lt;#PRAGMA-NAME#&gt;  =========</string>
+	<string>//&lt;#FieldName#&gt; Validate
+ValidationModel *&lt;#FieldName#&gt;Validate = [Validations validate&lt;#Field#&gt;:&lt;#FieldText#&gt;];
+    if (!&lt;#FieldName#&gt;Validate.isValid) {
+        isValid = &lt;#FieldName#&gt;Validate.isValid;
+        alertMessage = [alertMessage stringByAppendingString:&lt;#FieldName#&gt;ValidateValidate.message];
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C726AC02-5330-40EF-B2AF-F92A73C67B82</string>
+	<string>5ABFFFA8-A2FA-4DE2-92F4-D731A4D979FB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Add pragma mark for some set of functions in a class implementation</string>
+	<string>Provide feature to validate UI input fields </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Pragma Mark </string>
+	<string>Validation on UI</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

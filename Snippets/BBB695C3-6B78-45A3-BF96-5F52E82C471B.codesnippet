@@ -3,20 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>pragmamark - def</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#What?#&gt;
-</string>
+	<string>
+#pragma mark ========= &lt;#PRAGMA-NAME#&gt;  =========</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>806AE93B-443B-44EE-A8F7-9AED280FCF80</string>
+	<string>BBB695C3-6B78-45A3-BF96-5F52E82C471B</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>to Divide Different sections in Code</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>Pragma mark </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cellCreateAndConfigure</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  let identifier:String = &lt;#IdentifierName#&gt;
+  
+  var cell:&lt;#Custom UITableViewCell Name#&gt;? = tableView.dequeueReusableCellWithIdentifier(identifier) as? &lt;#Custom UITableViewCell Name#&gt;
+  if(cell == nil) {
+    
+    cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
+
+  }
+  
+		
+		
+		//Configure Cell here ...
+  
+  
+  return cell!</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>38B84634-7B14-418E-B2E2-7792CC94A3E2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create cell and configure UItableViewCell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UItabelViewCell create </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

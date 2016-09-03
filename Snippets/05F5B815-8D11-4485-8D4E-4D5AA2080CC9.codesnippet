@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hexColorStringToUIColorConvert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+
+//MARK: ====  Color from Hex String ========
+extension UIColor {
+	convenience init(rgba: String) {
+		var red: CGFloat = 0.0
+		var green: CGFloat = 0.0
+		var blue: CGFloat = 0.0
+		var alpha: CGFloat = 1.0
+		if rgba.hasPrefix("#") {
+			let index = advance(rgba.startIndex, 1)
+			let hex = rgba.substringFromIndex(index)
+			let scanner = NSScanner(string: hex) //NSScanner.scannerWithString(hex)
+			var hexValue: CUnsignedLongLong = 0
+			if scanner.scanHexLongLong(&amp;hexValue) {
+				if hex.length == 6 {
+					red = CGFloat((hexValue &amp; 0xFF0000) &gt;&gt; 16) / 255.0
+					green = CGFloat((hexValue &amp; 0x00FF00) &gt;&gt; 8) / 255.0
+					blue = CGFloat(hexValue &amp; 0x0000FF) / 255.0
+				} else if hex.length == 8 {
+					red = CGFloat((hexValue &amp; 0xFF000000) &gt;&gt; 24) / 255.0
+					green = CGFloat((hexValue &amp; 0x00FF0000) &gt;&gt; 16) / 255.0
+					blue = CGFloat((hexValue &amp; 0x0000FF00) &gt;&gt; 8) / 255.0
+					alpha = CGFloat(hexValue &amp; 0x000000FF) / 255.0
+				} else {
+					print("invalid rgb string, length should be 7 or 9")
+				}
+			} else {
+				println("scan hex error")
+			}
+		} else {
+			print("invalid rgb string, missing '#' as prefix")
+		}
+		self.init(red:red, green:green, blue:blue, alpha:alpha)
+	}
+}
+
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>05F5B815-8D11-4485-8D4E-4D5AA2080CC9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Convert Hex Color String into UIColor Object</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Find the UIColor from Hex String</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

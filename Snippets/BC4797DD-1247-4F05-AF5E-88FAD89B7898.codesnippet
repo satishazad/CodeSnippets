@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>screenVCDismissOrPop</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>	
+	/**
+	  DismissActiveScreen is added after dismissCurrentScreen to resolve the problem of present and push viewController
+	*/
+	func dismissActiveScreen(animated: Bool) {
+		//Method is used either pop or dismiss screen
+		
+		if(isModal()) {
+			//View is presented need to dismiss
+			dismissViewControllerAnimated(animated, completion: { () -&gt; Void in
+				DLog("Screen Dismissed")
+			})
+			
+		}
+		
+		
+		//View is Pushed -- need to Pop
+		navigationController?.popViewControllerAnimated(animated)
+		return
+
+		
+	}
+	
+	
+	
+	func isModal() -&gt; Bool {
+		
+		if((self.presentingViewController) != nil) {
+			return true
+		}
+		
+		if(self.presentingViewController?.presentedViewController == self) {
+			return true
+		}
+		
+		if(self.navigationController?.presentingViewController?.presentedViewController == self.navigationController) {
+			return true
+		}
+		
+		if((self.tabBarController?.presentingViewController?.isKindOfClass(UITabBarController)) != nil) {
+			return true
+		}
+		
+		return false
+	}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC4797DD-1247-4F05-AF5E-88FAD89B7898</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Dismiss or Pop the ViewController </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DismissActiveScreen</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -3,20 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>isSimulator_Preprocessor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#What?#&gt;
-</string>
+	<string>#if TARGET_IPHONE_SIMULATOR
+    //For Simulator
+
+#else
+
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>806AE93B-443B-44EE-A8F7-9AED280FCF80</string>
+	<string>FFBDE140-517D-4C84-BD7A-3A6171A6B31F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Proprocesssor to identify Platform that either it is a Simulator it Device</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>Preprocessor to find Simulator or Device</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,20 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>coreDataNewEntityBuild</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#What?#&gt;
-</string>
+	<string> var error: NSError? = nil
+
+        //Create point ManagedObject
+ var &lt;#ObjectName#&gt;: &lt;#EntityName#&gt; = newEntityWithError(&amp;error) as &lt;#EntityName#&gt;
+        
+ 
+ 
+		//Set Properties
+      </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>806AE93B-443B-44EE-A8F7-9AED280FCF80</string>
+	<string>35DE6223-C68A-4CBD-B254-6321E8AFF418</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a CoreData Entity and Set Properties</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>CoreData Entity Build</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ViewControllerTemplateMainImplementation</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark ========= init methods  =========
+
+
+
+#pragma mark ========= View Life Cycle  =========
+
+- (void)loadView {
+	[super loadView];
+	
+	//Construct &amp; Configure Screen
+    [self construct&lt;#Class-name#&gt;];
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self configureScreenAfterLoad];
+}
+
+
+
+
+
+
+
+#pragma mark ========= Memory Management  =========
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+
+
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+
+
+
+
+
+
+
+
+#pragma mark ========= Screen Construct &amp; Configure  =========
+
+- (void)construct&lt;#Class-name#&gt; {
+	
+	
+	
+}
+
+
+- (void)configureScreenAfterLoad {
+    
+}
+
+- (NSString *)screenTitle {
+	return @"&lt;#Class-name#&gt;";
+}
+
+
+
+
+
+
+
+#pragma mark ========= UI Actions  =========
+
+
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ABE9AB02-4B30-4F36-9068-94600DF0FB5F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for Structured View Controller methods araang to implement</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ViewControllerMainImplementationTemplate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

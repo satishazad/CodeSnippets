@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>FetchResultsController &amp; ResultType Switch Case</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark ========= Core Data Fetch Results Controller  =========
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    DLOG(@"Controller will Chnage.");
+    [self.&lt;#table#&gt; beginUpdates];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+
+    
+    NSIndexPath *adjustedIndexPath = [self tableIndexFromFRCIndexPath:indexPath];
+    NSIndexPath *adjustedNewIndexPath = [self tableIndexFromFRCIndexPath:newIndexPath];
+    
+    UITableView *table = self.&lt;#table#&gt;;
+    UITableViewRowAnimation animation = &lt;#UITableViewRowAnimationType#&gt;;
+    
+    switch (type) {
+        case NSFetchedResultsChangeDelete:
+            //Delete
+            [table deleteRowsAtIndexPaths:@[adjustedIndexPath] withRowAnimation:animation];
+            
+            break;
+            
+        case NSFetchedResultsChangeInsert:
+            //Insert
+            [table insertRowsAtIndexPaths:@[adjustedNewIndexPath] withRowAnimation:animation];
+            
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            //Update
+            [table reloadRowsAtIndexPaths:@[adjustedIndexPath] withRowAnimation:animation];
+            [table reloadSectionIndexTitles];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            //Move
+            [table deleteRowsAtIndexPaths:@[adjustedIndexPath] withRowAnimation:animation];
+            [table insertRowsAtIndexPaths:@[adjustedNewIndexPath] withRowAnimation:animation];
+            
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    DLOG(@"Controller Did Change");
+    [self.&lt;#table#&gt; endUpdates];
+    
+}
+
+
+- (NSIndexPath *)frcIndexPathFromTableIndexPath:(NSIndexPath *)tableIndexPath {
+    return [NSIndexPath indexPathForRow:tableIndexPath.row inSection:tableIndexPath.section];
+}
+
+- (NSIndexPath *)tableIndexFromFRCIndexPath:(NSIndexPath *)frcIndexPath {
+    return [NSIndexPath indexPathForRow:frcIndexPath.row inSection:frcIndexPath.section];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>459C6706-BA04-4223-AB77-0CBB2DF73145</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>FetchResultsControllers and Switch Statement for NSFetchResultsType in CoreData</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>FetchResultsControllers with Type SwitchCase</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

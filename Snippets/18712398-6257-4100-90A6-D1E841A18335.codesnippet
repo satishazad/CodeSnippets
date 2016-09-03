@@ -3,20 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>macro_if_else_endif</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#What?#&gt;
-</string>
+	<string>#ifdef &lt;#PREPROCESSOR_CONDITION#&gt;
+
+#else
+    
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>806AE93B-443B-44EE-A8F7-9AED280FCF80</string>
+	<string>18712398-6257-4100-90A6-D1E841A18335</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>macro used to condiftional com;pilation</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>Macro for if-def with else and end if</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

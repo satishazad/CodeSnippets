@@ -3,20 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>Macro_RE_PRO_APP</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// TODO: &lt;#What?#&gt;
-</string>
+	<string>#ifdef RE_VERSION
+    //Your Code for RE
+#elif PRO_VERSION
+    //Your Code for PRO
+#else
+    //Your Code for APP
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>806AE93B-443B-44EE-A8F7-9AED280FCF80</string>
+	<string>A3079AE4-BFB1-4D20-B648-9135A09CF780</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add Macro with ifelseif condition for Pro, App and Re app</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TODO</string>
+	<string>Macro_RE_PRO_APP</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
